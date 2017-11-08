@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs2340.team6.totallyratticalapp.AppActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:onClick="onLogoutPressed"
+        android:id="@+id/LogoutButton" />
+
+    <TextView
+        android:text="YOU ARE NOW INSIDE THE APP. CONGRATS!"
+        android:textSize="40dp"
+        android:layout_marginBottom="304dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/LogoutButton"
+        android:id="@+id/WelcomeText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <Button
+        android:id="@+id/rat_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:onClick="onViewDataPressed"
+        android:text="Rat Feed"
+        app:layout_constraintLeft_toRightOf="@+id/WelcomeText"
+        app:layout_constraintRight_toLeftOf="@+id/WelcomeText"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Rat Sighting"
+        android:onClick="onMakeReportPressed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/LogoutButton"
+        app:layout_constraintTop_toBottomOf="@+id/rat_feed"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rat Map"
+        app:layout_constraintBottom_toTopOf="@+id/rat_feed"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="onRatMapPressed"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintVertical_bias="0.494" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Dates"
+        app:layout_constraintBottom_toTopOf="@+id/rat_feed"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText"
+        app:layout_constraintLeft_toRightOf="@+id/button4"
+        android:onClick="onSetDatePressed"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintVertical_bias="0.484" />
+
+</android.support.constraint.ConstraintLayout>

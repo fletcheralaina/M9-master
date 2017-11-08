@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs2340.team6.totallyratticalapp.LoginActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintRight_toRightOf="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:text="Login"
+        app:layout_constraintRight_toRightOf="@+id/etPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/etPassword"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:onClick="onLoginPressed"/>
+
+    <Button
+        android:id="@+id/tvSignUpLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Sign Up"
+        app:layout_constraintLeft_toLeftOf="@+id/loginButton"
+        app:layout_constraintRight_toRightOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        android:onClick="onRegisterPressed"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpLink"
+        android:layout_marginTop="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tvSignUpLink"
+        app:layout_constraintRight_toRightOf="@+id/tvSignUpLink"
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        android:onClick="onCancelPressed"/>
+
+</android.support.constraint.ConstraintLayout>

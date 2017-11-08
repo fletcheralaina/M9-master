@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="300dp"
+    android:paddingLeft="300dp"
+    android:paddingRight="300dp"
+    android:paddingTop="300dp"
+    tools:context="com.cs2340.team6.totallyratticalapp.ChartActivity">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs2340.team6.totallyratticalapp.RegisterActivity">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintRight_toRightOf="@+id/etName"
+        app:layout_constraintLeft_toLeftOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        app:layout_constraintRight_toRightOf="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/CancelRegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="160dp"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton"
+        android:onClick="onCancel2Pressed"
+        app:layout_constraintRight_toRightOf="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername"/>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@+id/roleSpinner"
+        tools:layout_editor_absoluteX="17dp"
+        app:layout_constraintRight_toRightOf="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername"
+        android:onClick="onRegisterPressed"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintRight_toRightOf="@+id/etUsername"
+        app:layout_constraintLeft_toLeftOf="@+id/etUsername"
+        android:id="@+id/roleSpinner"
+        android:layout_marginTop="15dp"
+    />
+
+</android.support.constraint.ConstraintLayout>

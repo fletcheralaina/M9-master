@@ -1,0 +1,41 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs2340.team6.totallyratticalapp.WelcomeActivity">
+
+    <TextView
+        android:text="WELCOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:id="@+id/WelcomeText"
+        android:layout_marginLeft="-296dp"
+        android:textSize="70dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/WelcomeText"
+        app:layout_constraintRight_toRightOf="@+id/WelcomeText"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeText"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:onClick="onWelcomeLoginPressed"
+        android:id="@+id/WelcomeLogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/WelcomeLogin"
+        app:layout_constraintRight_toRightOf="@+id/WelcomeLogin"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeLogin"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:onClick="onWelcomeRegisterPressed" />
+
+</android.support.constraint.ConstraintLayout>
